@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="vendor/awesomplete.css" />
+        <script src="vendor/awesomplete.js" async></script>
+    </head>
+    <body>
+    <section id="ex1">
+        <h1>Beispiel 1</h1>
+        <input class="awesomplete" list="mylist" />
+        <datalist id="mylist">
+            <option>Ada</option>
+            <option>Java</option>
+            <option>JavaScript</option>
+            <option>Brainfuck</option>
+            <option>LOLCODE</option>
+            <option>Node.js</option>
+            <option>Ruby on Rails</option>
+        </datalist>
+    </section>
+
+    <section id="ex-country">
+        <h2>Ajax example <small>(restcountries.eu api)</small></h2>
+        <label>Select French speaking country</label>
+            <div class="awesomplete">
+                <input type="text" autocomplete="off" aria-expanded="false" role="combobox">
+                <ul role="listbox" hidden="">
+                    <li role="option"></li>
+                </ul>
+            </div>
+    </section>
+
+
+    <section id="ex-manuf">
+        <h2>Localserver <small>(http://localhost:3001/manuf api)</small></h2>
+        <label>Manuf</label>
+            <div class="awesomplete">
+                <input type="text" autocomplete="off" aria-expanded="false" role="combobox">
+                <ul role="listbox" hidden="">
+                    <li role="option"></li>
+                </ul>
+            </div>
+    </section>
+
+
+    <!--<script>
+        let request1 = new XMLHttpRequest();
+        request1.open("GET", "https://restcountries.eu/rest/v1/lang/fr", true);
+        request1.onload = function() {
+            let list = JSON.parse(request1.responseText).map(
+                function(i) { return i.name; }
+                );
+            let a = new Awesomplete(document.querySelector("#ex-country input"),
+                { list: list });
+        };
+        request1.send();
+    </script>-->
+
+    <script>
+        let request2 = new XMLHttpRequest();
+        request2.open("GET", "http://localhost:3001/manuf", true);
+        request2.onload = function() {
+            let list = JSON.parse(request2.responseText).map(
+                function(i) { return i.name; }
+            );
+            //console.log(request2.responseText);
+            let b = new Awesomplete(document.querySelector("#ex-manuf input"),
+                { list: list });
+        };
+        request2.send();
+    </script>
+
+    <!--<script src="app.js"></script>-->
+    </body>
+</html>

@@ -1,0 +1,3 @@
+error: password:  is required {"service":"registration-service","label":"Any label you like!","timestamp":"2020-12-02T16:00:18.681Z"}
+error: username: username must be at least 3 characters {"service":"registration-service","label":"Any label you like!","timestamp":"2020-12-02T16:00:29.245Z"}
+error: email: Email is not valid {"service":"registration-service","label":"Any label you like!","timestamp":"2020-12-02T16:00:36.141Z"}
