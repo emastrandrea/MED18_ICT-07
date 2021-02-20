@@ -1,23 +1,23 @@
 {
-  "name": "JSBC_MED19",
+  "name": "M307_MED19",
   "version": "1.0.0",
-  "description": "JavaScript Bootcamp",
-  "main": "index.js",
+  "description": "ICT-Modul_307",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "Mediamatiker",
-    "ICT-06",
-    "javascript",
-    "oop"
+    "m307",
+    "ICT",
+    "javascript"
   ],
   "author": "daniel.garavaldi@bzz.ch",
   "license": "ISC",
   "dependencies": {
     "esm": "^3.2.25",
-    "express-useragent": "^1.0.15",
-    "moment": "^2.27.0",
-    "request-ip": "^2.1.3"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "multer": "^1.4.2"
   }
 }
