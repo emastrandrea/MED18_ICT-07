@@ -19,6 +19,6 @@ router.get('/students', (req,res) =>{
 router.get('/students/:id', (req,res) =>{
     const id = req.params.id;
     console.log(id);
-    const student = studentsData.filter(student => student.student_id === parseInt(id));
+    const student = studentsData.filter(eintrag => eintrag.student_id === parseInt(id));
     res.send(student);
 });
