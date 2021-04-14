@@ -10,4 +10,5 @@ console.log(`Running at Port ${port}`);
 
 //Variante 1
 app.use('/bilder', express.static('img'));
+app.use('/images/:id', express.static('img'));
 
