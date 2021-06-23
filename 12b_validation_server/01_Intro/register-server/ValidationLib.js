@@ -1,4 +1,11 @@
 // Show input error message
+
+/**
+ * Beschreibung
+ * @param id: Identifikation des eingegebenen Datenelement
+ * @param message: Fehlermeldung
+ * @returns {string}
+ */
 function showError(id, message) {
     return `${id}: ${message}`;
 }
