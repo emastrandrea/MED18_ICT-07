@@ -1,11 +1,11 @@
 {
-  "name": "M307_MED19",
+  "name": "MED18_ICT-07",
   "version": "1.0.0",
-  "description": "ICT-Modul_307",
+  "description": "ICT-07",
   "main": "server.js",
   "scripts": {
     "upload": "node 01_Get_Post/03_Solutions/upload/upload2.js",
-    "puzzleserver": "node 81_Puzzleserver/00_Demo/server2.js",
+    "puzzleserver": "node 81_Puzzleserver/01_Intro/server2.js",
     "schoolserver": "node 82_Schoolserver/03_Solutions/server.js",
     "registrationserver": "node 12b_validation_server/00_Demo/register-server/server.js",
     "loggerserver": "set NODE_ENV=development && node 13a_Logging/00_Demo/register-server/server.js",
@@ -13,8 +13,8 @@
   },
   "keywords": [
     "Mediamatiker",
-    "m307",
-    "ICT",
+    "ICT-07",
+    "MED18",
     "javascript"
   ],
   "author": "daniel.garavaldi@bzz.ch",
